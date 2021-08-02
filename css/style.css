@@ -1,0 +1,143 @@
+h1{
+    color: red;
+    
+}
+.bg{
+    width: 100%;
+    height: 1200px;
+    background-color: gray;
+}
+.transparent-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.main-menu nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+.main-menu ul li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 2px;
+    height: 0px;
+   background-color: red;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+.main-menu ul li:hover::before {
+    height: 25px;
+}
+.main-menu ul li a{
+    text-decoration: none;
+    padding: 30px 10px;
+    display: inline-block;
+    color: red;
+    text-transform: uppercase;
+}
+.main-menu ul li:hover > a{
+    color: darkblue;
+}
+.main-menu nav .submenu{
+    border-top: 4px solid green;
+    position: absolute;
+    background-color: #fff;
+    top: 110%;
+    left: 0;
+    min-width: 240px;
+    padding: 0;
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.main-menu nav .submenu ul{
+
+    padding: 0px 20px;
+}
+.main-menu nav .submenu li{
+    display: block;
+    margin: 0;
+    padding: 5px 20px;
+}
+.main-menu nav .submenu li::before{
+    display: none;
+}
+.main-menu nav .submenu li a{
+    padding: 5px 20px;
+}
+.main-menu nav .submenu li:hover > a{
+    color: black;
+}
+.main-menu nav ul li:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.main-menu nav .submenu li .submenu{
+  
+    left: 100%;
+    top: 0%;
+}
+.header-cn{
+    float: right;
+}
+.header-bar{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 1;
+   align-items: center;
+   padding-top: 10px;
+   padding-left: 12px;
+   margin-right: 40px;
+   float: right;
+   margin-left: 40px;
+   cursor: pointer;
+ 
+
+}
+.header-bar span{
+    display:block;
+    background-color: red;
+    width: 29px;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    transition: 0.9s;
+   
+  
+}
+.header-bar span:nth-last-child(2){
+    width: 15px;
+}
+.header-bar:hover span{
+    width: 29px;
+}
+.header-bn{
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+/* =============HEADER HERO PART================= */
+img{
+    width: 100%;
+}
+.hero-mai{
+    display: flex;
+    align-items: center;
+}
+.header-hero-content{}
+.header-hero-content span{}
+.header-hero-content h2{}
+.header-hero-content a{}
+.header-hero-thumb{}
+
